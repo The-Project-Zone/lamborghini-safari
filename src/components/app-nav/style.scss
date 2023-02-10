@@ -1,0 +1,46 @@
+@import "src/components/common/css/variables.scss";
+
+nav {
+  padding: 20px 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  width: 100%;
+  .customRow {
+    .appIcon {
+      width: 100px;
+      float: left;
+    }
+    .langIcon {
+      width: 30px;
+      float: right;
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  nav {
+    padding: 25px;
+    .customRow {
+      max-width: 700px;
+      margin: 0 auto;
+      .langIcon {
+        width: 34px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 992px) {
+  nav {
+    .customRow {
+      max-width: 900px;
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  nav {
+    .customRow {
+      max-width: 1200px;
+    }
+  }
+}
